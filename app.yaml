@@ -1,0 +1,18 @@
+name: Mixtral7b_autotrain
+type: gradio-space
+sdk: docker
+
+metadata:
+  space_id: Chris4K/Mixtral7b_autotrain
+  original_url: https://huggingface.co/spaces/Chris4K/Mixtral7b_autotrain
+
+deploy:
+  targets:
+    - public-repo
+    - huggingface
+
+build:
+  command: bash build.sh
+
+test:
+  command: echo "Tests not yet implemented"
